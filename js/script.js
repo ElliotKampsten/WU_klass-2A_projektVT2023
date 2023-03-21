@@ -1,7 +1,10 @@
+const links = document.getElementById("links")
 const burgare = document.getElementById("burgare")
 
 function LinkToggle(){
-    burgare.classList.toggle("links_active")
+    links.classList.toggle("links_active")
+    burgare.classList.toggle("burgertoggle")
+    
 }
 
 burgare.addEventListener("click", LinkToggle)

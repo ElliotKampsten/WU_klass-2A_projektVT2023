@@ -5,15 +5,20 @@
 
 header{
     display: flex;
-    background-color: crimson;
+    background-color:#000000;
     grid-area: he;
 
 }
 
 #sec1{
     display: flex;
-    background-color: coral;
+    background-color:#14213d;
     grid-area: se1;
+}
+
+#linesection{
+    background-color: #fca311;
+    grid-area: ls;
 }
 
 footer{
@@ -25,9 +30,10 @@ footer{
 #gridwrapper{
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 80px 600px 80px;
+    grid-template-rows: 80px 5px 600px 80px;
     grid-template-areas: 
     "he he"
+    "ls ls"
     "se1 se1"
     "fo fo"
     ;
@@ -36,7 +42,7 @@ footer{
 #links{
     display: flex;
     flex-direction: column;
-    background-color: violet;
+    background-color:#fca311;
     height: 500px;
     width: 200px;
     position: absolute;
@@ -44,6 +50,7 @@ footer{
     align-items: center;
     right: 0;
     top: -500px;
+    transition: all 0.5s;
 }
 
 #links li{
@@ -70,7 +77,7 @@ footer{
     border-radius: 10%;
     margin: 10px;
     transition: all 0.5s;
-    background-color: black;
+    background-color:#e5e5e5;
 }
 
 #burgare{
@@ -83,6 +90,38 @@ footer{
     cursor: pointer;
 }
 
+.burgertoggle #linje1{
+    transform: rotate(-45deg) translate(-15px, 15px);
+}
+
+.burgertoggle #linje2{
+    opacity: 0;
+}
+
+.burgertoggle #linje3{
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
 .links_active{
-    transform: translateY(580px);
+    transform: translateY(585px);
+}
+
+@media screen and (min-width: 800px){
+    #burgare{
+        display: none;
+    }
+    
+    #links{
+        position: absolute;
+        width: 1vh;
+        height: 80px;
+        right: 50%;
+        top:0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: transparent;
+    }
+
+
 }
