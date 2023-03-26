@@ -3,6 +3,17 @@
     padding: 0px;
 }
 
+p{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    color: black;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
 header{
     display: flex;
     flex-direction: row;
@@ -93,11 +104,13 @@ footer{
 #gridwrapper{
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 80px 5px 300px 200px;
+    grid-template-rows: 80px 5px 300px 100px 220px 200px;
     grid-template-areas: 
     "he he"
     "ls ls"
     "se1 se1"
+    "tes tes"
+    "bs1 bs1"
     "fo fo"
     ;
 }
@@ -167,7 +180,53 @@ footer{
 
 .links_active{
     transform: translateY(585px);
+    
 }
+
+#TextSection{
+    display: flex;
+    grid-area: tes;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    
+
+}
+
+#BildSektion1{
+    grid-area: bs1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#FoldedCardsImg{
+    width: 45%;
+    height: auto;
+    
+}
+
+#CardSpringImg{
+    width: 45%;
+    height: auto;
+    
+}
+
+.DiscountImg{
+    transition: 0.3s ease; 
+    
+}
+
+.DiscountImg:hover{
+    cursor: pointer; 
+    border: #fca311 5px;
+    transform: scale(1.1);
+    
+}
+
+
 
 @media screen and (min-width: 800px){
     #burgare{
