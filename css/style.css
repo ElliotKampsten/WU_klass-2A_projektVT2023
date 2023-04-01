@@ -25,6 +25,44 @@ header{
 
 }
 
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color:#000000;
+    grid-area: fo;
+
+}
+
+#ChipIcon{
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+}
+
+#PokerList{
+    margin-left: 10px;
+}
+
+#PokerList h2{
+    color: white;
+    margin-bottom: 10px;
+}
+
+#PokerList a{
+    color: white;
+    margin-left: 15px;
+    list-style: none;
+    text-decoration: none;
+    
+    
+}
+
+#PokerList a:hover{
+    color: #ababab;
+}
+
+
+
 #Titel{
     color: #e5e5e5;
     font-weight: bolder;
@@ -84,6 +122,12 @@ header{
     z-index: 0;
 }
 
+#CopyrightText{
+    margin-top: auto;
+    color: white;
+    font-size: 0.6rem;
+}
+
 #DownLoadButtonText{
     font-weight: bolder;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -95,22 +139,52 @@ header{
     grid-area: ls;
 }
 
-footer{
+#KontaktInformation{
     display: flex;
-    background-color: grey;
-    grid-area: fo;
+    background-color: #232323;
+    grid-area: KI;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#LineSection3{
+    background-color: #fca311;
+    grid-area: l3;
+}
+
+#Kontakt{
+    color: white;
+}
+
+#FacebookIcon{
+    width: 40px;
+    height: 40px;
+}
+
+#InstagramIcon{
+    width: 40px;
+    height: 40px;
+}
+
+#TwitterIcon{
+    width: 40px;
+    height: 40px;
 }
 
 #gridwrapper{
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 80px 5px 300px 100px 450px 200px;
+    grid-template-rows: 80px 5px 300px 100px 450px 5px 50px 5px 200px;
     grid-template-areas: 
     "he he"
     "ls ls"
     "se1 se1"
     "tes tes"
     "bs1 bs1"
+    "l2 l2"
+    "KI KI"
+    "l3 l3"
     "fo fo"
     ;
 }
@@ -183,6 +257,10 @@ footer{
     
 }
 
+.DownloadInvis{
+    visibility:hidden;
+}
+
 #TextSection{
     display: flex;
     grid-area: tes;
@@ -194,6 +272,11 @@ footer{
 
 }
 
+#LineSection2{
+    background-color: #fca311;
+    grid-area: l2;
+}
+
 #BildSektion1{
     grid-area: bs1;
     display: flex;
@@ -203,14 +286,32 @@ footer{
     justify-content: space-evenly;
 }
 
+#BildText1{
+    font-size: 0.9rem;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    color: #ffff;
+    bottom: 50px;
+}
+
+#BildText2{
+    font-size: 0.9rem;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    color: #ffff;
+    top: 180px;
+}
+
 #FoldedCardsImg{
-    width: 60%;
+    width: 70%;
     height: auto;
     
 }
 
 #CardSpringImg{
-    width: 60%;
+    width: 70%;
     height: auto;
     
 }
@@ -233,6 +334,86 @@ footer{
     #burgare{
         display: none;
     }
+
+    #Titel{
+        color: #e5e5e5;
+        font-weight: bolder;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 3rem;
+        margin-left: 8%;
+    }
+
+    #ChipIcon{
+        visibility: visible;
+        position: absolute;
+        left: 50px;
+        width: 80px;
+        height: 80px;
+    }
+
+    #ChipIcon:hover{
+        cursor: pointer;
+        transform: rotate(360deg);
+        transition: 0.5s ease;
+
+    }
+
+    header{
+        display: flex;
+        flex-direction: row;
+        background-color:#000000;
+        grid-area: he;
+
+    }
+
+    #sec1{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        background-image: url("../img/HeaderBackgroundImage.jpg");
+        grid-area: se1;
+    }
+
+    #BildText1{
+        font-size: 1.8rem;
+        font-weight: bolder;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        position: absolute;
+        color: #e5e5e5;
+        bottom: 95px;
+        right: 71%;
+        
+    }
+    
+    #BildText2{
+        font-size: 1.8rem;
+        font-weight: bolder;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        position: relative;
+        color: #e5e5e5;
+        top: 160px;
+        left: 600px;
+        z-index: 1;
+    }
+
+    #FacebookIcon:hover{
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+    
+    #InstagramIcon:hover{
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+    
+    #TwitterIcon:hover{
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+    }
     
     #links{
         position: static;
@@ -242,8 +423,35 @@ footer{
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
-        background-color: grey;
+        background-color: rgb(0, 0, 0);
     }
+
+    #FoldedCardsImg{
+        width: 550px;
+        height: auto;
+        justify-self: center;
+        align-self: center;
+        
+    }
+
+    #BildSektion1{
+        grid-area: bs1;
+        display: flex;
+        flex-direction: row;
+
+    }
+    
+    
+    #CardSpringImg{
+        width: 550px;
+        height: auto;
+        justify-self: center;
+        align-self: center;
+        z-index: 0;
+        
+    }
+
+   
 
 
 }
