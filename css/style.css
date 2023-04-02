@@ -14,6 +14,7 @@ h2{
     font-weight: bold;
 }
 
+
 header{
     display: flex;
     flex-direction: row;
@@ -110,6 +111,8 @@ footer{
     margin-bottom: 11px;
 }
 
+
+
 #DownLoadButtonShadow{
     display: flex;
     align-items: center;
@@ -140,6 +143,7 @@ footer{
 #linesection{
     background-color: #fca311;
     grid-area: ls;
+    z-index: 3;
    
 }
 
@@ -208,6 +212,113 @@ footer{
     "l3 l3"
     "fo fo"
     ;
+}
+
+#HittaHitGrid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 80px 5px 300px 350px 150px 5px 50px 5px 200px;
+    grid-template-areas: 
+    "he he"
+    "ls ls"
+    "se1 se1"
+    "RS RS"
+    "tes tes"
+    "l2 l2"
+    "KI KI"
+    "l3 l3"
+    "fo fo"
+    ;
+}
+
+#ProdukterGrid{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 80px 5px 300px 700px 5px 50px 5px 200px;
+    grid-template-areas: 
+    "he he"
+    "ls ls"
+    "se1 se1"
+    "PS1 PS2"
+    "l2 l2"
+    "KI KI"
+    "l3 l3"
+    "fo fo"
+    ;
+}
+
+#ProduktSec1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: PS1;
+
+}
+
+#ProduktSec2{
+    grid-area: PS2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ProduktBeskrivningar{
+    display: flex;
+    width: 175px;
+    height: 50px;
+    border: #000000 solid 5px;
+    border-radius: 8px;
+    margin-right: 15px;
+    background-color: #ababab;
+    margin-bottom: 180px;
+    position: relative;
+    top: 88px;
+    align-items: center;
+    justify-content: center;
+}
+
+#Kortlek{
+    background-image: url(../img/DeckOfCards.jpg);
+    background-size: 100% 100%;
+}
+
+#Tärningar{
+    background-image: url(../img/Tärningar.jpg);
+    background-size: 100% 100%;
+}
+
+#Mugg{
+    background-image: url(../img/Mugg.jpg);
+    background-size: 100% 100%;
+}
+
+.ProduktBilder{
+    width: 150px;
+    height: 200px;
+    border: #000000 solid 5px;
+    border-radius: 8px;
+    margin-top: 18px;
+}
+
+
+#RoadSection{
+    grid-area: RS;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+#RoadDescriptionDiv{
+    width: 350px;
+    height: 300px;
+    border:#000000 solid 5px;
+    border-radius: 8px;
+    background-image: url(../img/Vägbeskrivning.png);
+    background-size: 100% 100%;
 }
 
 #links{
@@ -401,6 +512,102 @@ footer{
         "l3 l3"
         "fo fo"
         ;
+    }
+
+    #HittaHitGrid{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 80px 5px 300px 350px 150px 5px 50px 5px 200px;
+        grid-template-areas: 
+        "he he"
+        "ls ls"
+        "se1 se1"
+        "RS RS"
+        "tes tes"
+        "l2 l2"
+        "KI KI"
+        "l3 l3"
+        "fo fo"
+        ;
+    }
+
+    #ProdukterGrid{
+        display: grid;
+        height: 100%;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 80px 5px 300px 1250px 5px 50px 5px 200px;
+        grid-template-areas: 
+        "he he"
+        "ls ls"
+        "se1 se1"
+        "PS1 PS2"
+        "l2 l2"
+        "KI KI"
+        "l3 l3"
+        "fo fo"
+        ;
+    }
+    
+    #ProduktSec1{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        grid-area: PS1;
+    
+    }
+    
+    #ProduktSec2{
+        grid-area: PS2;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    .ProduktBeskrivningar{
+        display: flex;
+        width: 275px;
+        height: 75px;
+        border: #000000 solid 5px;
+        border-radius: 8px;
+        background-color: #ababab;
+        position: relative;
+        top:55px;
+        margin-top: 90px;
+    }
+
+    h3{
+        font-size: 2rem;
+    }
+
+    .ProduktBilder{
+        width: 250px;
+        height: 325px;
+        border: #000000 solid 5px;
+        border-radius: 8px;
+        margin-top: 18px;
+        margin-right: 100px;
+    }
+    
+    #Kortlek{
+        background-image: url(../img/DeckOfCards.jpg);
+        background-size: 100% 100%;
+    }
+    
+    #Tärningar{
+        background-image: url(../img/Tärningar.jpg);
+        background-size: 100% 100%;
+    }
+
+    #RoadSection{
+        grid-area: RS;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+    
     }
 
     .PersonalNamn{
